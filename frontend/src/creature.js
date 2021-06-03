@@ -10,4 +10,21 @@ class Creature {
         Creature.allCreatures.push(this)
         this.renderCreatures()
     }
+
+    static renderCreatures(creatures){
+        card.innerHTML = ""
+        for (let creature of creatures){
+            creature.renderCreatures()
+        }
+    }
+
+    static fetchCreatures(){
+        fetch(creaturesURL)
+        .then(response => response.json())
+        .then(creatures => {
+            for(let creature of creatures.data){
+                let newCreatureCard = new Creature(creature)
+            }
+        })
+    }
 }
