@@ -4,29 +4,26 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="styles.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1>MTG</h1>
-        <p>Add a Card</p>
-        <p><form action="" class="makeacreature">
+    
+    <h1>MTG</h1>
+    <p>Add a Card</p>
+    <p>
+        <form action="" class="makeacreature">
             <label for="name">Creature Name</label>
             <input type="text" class="creaturename">
-            <br>
             <label for="image">Image URL</label>
-            <input type="text" class="creatureimage">
-            <br>
+            <input type="text" class="createimage">
             <label for="description">Description</label>
-            <textarea name="" id="" cols="30" rows="10" class="creaturedescription"></textarea>
-            <br>
+            <textarea name="" id="" cols="30" rows="10" class="createdescription"></textarea>
             <input type="submit" class="button">
-        </form></p>
-        
-        <ul class="card"></ul>
-
-    <!-- Add the JS Files  -->
-    <script src="src/creature.js"></script>
-    <script src="src/index.js"></script>
-    <script src="src/skill.js"></script>
+        </form>
+    </p>
+    <!-- Add JS Files  -->
+    <script src="./src/creature.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="./src/skill.js"></script>
     </body>
 </html>
