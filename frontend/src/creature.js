@@ -19,4 +19,18 @@ class Creature {
             c.renderCreature()
         }
     }
+
+    // Fetch Creatures
+    static fetchCreatures(){
+        fetch(creaturesURL)
+        .then(res => res.json())
+        .then(c => {
+            for(let c of creatures.data){
+                let newCreatureCard = new Creature(c)
+            }
+        })
+    }
+
+    // Render The Creature
+
 }
