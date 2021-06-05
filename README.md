@@ -1,5 +1,3 @@
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -19,11 +17,8 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -39,8 +34,6 @@ Here's why:
 * HTML
 * CSS
 * Ruby on Rails
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -71,14 +64,10 @@ To use this repo. Please read the following instructions.
 4. Push to the Branch (`git push origin branchname`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-
 
 <!-- CONTACT -->
 ## Contact
