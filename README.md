@@ -74,6 +74,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Nathaniel Cowan - [nathanielgcowan](https://github.com/nathanielgcowan)
 
-Project Link: [https://github.com/nathanielgcowan/sixthreepartone](https://github.com/nathanielgcowan/sixthreepartone)
-
 Project Backend Link: [https://github.com/nathanielgcowan/sixthreepartonebackend](https://github.com/nathanielgcowan/sixthreepartonebackend)
