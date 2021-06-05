@@ -26,8 +26,8 @@
 For my Flatiron Project I decided to build an application form forming decks of one of my favorite card games. This is the result.
 
 Here's why:
-* To do the Flatiron Project
-* Fill out information about card
+* Complete Project
+* Fill out information about card I play
 
 ### Built With
 * JS
