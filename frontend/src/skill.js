@@ -1,4 +1,4 @@
-class Skill{
+class Skill {
 
     constructor(skill){
         this.id = skill.id
@@ -30,20 +30,20 @@ class Skill{
         fetch(skillsURL, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
+                "Content-Type":"application/json",
+                "Accept":"application/json",
             },
             body: JSON.stringify({
                 name: skillName,
                 creature_id: creatureId,
-                creatureSkills: creaturesSkills
+                creaturesSkills: creaturesSkills
             })
         })
         .then(response => response.json())
         .then(skill => {
             let newSkill = new Skill(skill)
             const creature = Creature.allCreatures.find(creature => parseInt(creature.id) === newSkill.creature_id)
-            creature.skills.push(newSkill)
+            creature.skills.push(this)
             newSkill.renderSkill(creaturesSkills)
         })
     }

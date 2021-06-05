@@ -38,8 +38,6 @@ class Creature {
         const deleteButton = document.createElement('button')
         const skillForm = document.createElement('form')
         creatureLi.dataset.id = this.id
-        // dataset - allows you to set and get your elements
-        // console.log(creatureLi.dataset.id)
         card.appendChild(creatureLi)
         h2.innerText = this.name
         img.src = this.image
@@ -58,11 +56,12 @@ class Creature {
         })
         creatureLi.append(h2, img, p, skillForm, creaturesSkills, deleteButton)
     }
+
     static submitCreature(event){
         event.preventDefault()
         fetch(creaturesURL, {
-            method: "POST",
-            headers: {
+            method:"POST",
+            headers:{
                 "Content-Type":"application/json",
                 "Accept":"application/json",
             },
