@@ -6,19 +6,20 @@ class Skill {
         this.creature_id = skill.creature_id
     }
 
-    static createSkill(e){
-        e.preventDefault()
+    static createSkill(event){
+        event.preventDefault()
         const li = document.createElement('li')
-        const skillName = e.target.children[0].value
-        const creaturesSkills = e.target.previousElementSibling
-        const creatureId = e.target.parentElement.dataset.id
+        const skillName = event.target.children[0].value
+        const creaturesSkills = event.target.previousElementSibling
+        const creatureId = event.target.parentElement.dataset.id
         Skill.submitSkill(skillName, creaturesSkills, creatureId)
-        e.target.reset()
+        event.target.reset()
     }
 
     renderSkill(creaturesSkills){
         const li = document.createElement('li')
         const deleteButton = document.createElement('button')
+        deleteButton.innerText = 'Delete'
         li.dataset.id = this.id
         li.innerText = this.name
         li.append(deleteButton)
@@ -40,11 +41,11 @@ class Skill {
             })
         })
         .then(response => response.json())
-        .then(skill => {
-            let newSkill = new Skill(skill)
-            const creature = Creature.allCreatures.find(creature => parseInt(creature.id) === newSkill.creature_id)
-            creature.skills.push(this)
-            newSkill.renderSkill(creaturesSkills)
+        .then(function(skill){
+            let newSkill = new Skill(skill);
+            const creature = Creature.allCreatures.find(creature => parseInt(creature.id) === newSkill.creature_id);
+            creature.skills.push(this);
+            newSkill.renderSkill(creaturesSkills);
         })
     }
 

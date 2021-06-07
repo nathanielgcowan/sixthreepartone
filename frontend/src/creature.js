@@ -54,7 +54,7 @@ class Creature {
             let newSkill = new Skill(skill)
             newSkill.renderSkill(creaturesSkills)
         })
-        creatureLi.append(h2, img, p, skillForm, creaturesSkills, deleteButton)
+        creatureLi.append(h2, img, p, creaturesSkills, skillForm, deleteButton)
     }
 
     static submitCreature(event){
