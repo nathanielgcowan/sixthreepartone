@@ -45,8 +45,8 @@ class Creature {
         deleteButton.innerText = "Delete"
         deleteButton.addEventListener("click", this.deleteCreature)
         skillForm.innerHTML += `
-        Add Skill <input type="text">
-        <input type="submit">
+            Add Skill <input type="text">
+            <input type="submit">
         `
         skillForm.addEventListener("submit", Skill.createSkill)
         creaturesSkills.dataset.id = this.id
